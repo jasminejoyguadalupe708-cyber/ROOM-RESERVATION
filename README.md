@@ -1,24 +1,18 @@
-# Roomly — Room Reservation System
+# Room Reservation & Room Observation
 
-A responsive room-reservation demo built with plain HTML, CSS, and JavaScript.
+This repository includes two standalone browser-based prototypes:
 
-## Features
-- Browse four sample rooms with seat capacities and hourly rates.
-- Filter rooms by type and reservation date.
-- Make reservations with guest details, date, time, party size, and purpose.
-- Prevent overlapping reservations for the same room and time.
-- View and cancel reservations.
-- Responsive layout for desktop and mobile.
+- **Room Reservation:** `index.html` — browse rooms, make bookings, and manage reservations.
+- **Room Observation:** `room-observation.html` — record room inspections and conditions, filter observations, track follow-up status, and export records to CSV.
 
 ## Run locally
-Open `index.html` in a modern browser. No build tools or dependencies are required.
+Download or clone the repository and open either HTML file in a modern browser. No build tools or dependencies are required.
 
 ## Publish with GitHub Pages
-1. Open the repository's **Settings**.
-2. Select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Choose branch `main` and folder `/ (root)`, then save.
-5. Wait for GitHub Pages to publish the site; the Pages section will show its URL.
+1. Open the repository **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch `main` and folder `/ (root)`, then save.
+4. After publishing, the reservation page is at the site root and the observation page is available at `/room-observation.html`.
 
-## Important demo limitation
-This is a front-end prototype. Reservations are stored in the browser's local storage, so they are not shared across devices or users. It has no server-side database, login, or email notifications. For real multi-user bookings, connect a backend and database and validate availability server-side.
+## Demo limitations
+Both pages store data in the browser's local storage. Records are not shared across users or devices, and browser storage is not a substitute for a backup or secure database. For a real multi-user system, add a backend/database, access controls, and server-side validation.
